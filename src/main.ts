@@ -8,9 +8,7 @@ class Book {
         this.createdAt = Date.now();
     }
 
-    getInfo(): string {
-        return `${this.title} — ${this.author}`;
-    }
+
 }
 
 class BookStorage {
@@ -96,7 +94,7 @@ class BookApp {
             const card = document.createElement('div');
             card.className = 'card';
             card.innerHTML = `
-                <div class="title">Книга:${book.title}</div>
+                <div class="title">Книга: ${book.title}</div>
                 <div class="author">Автор: ${book.author}</div>
                 <div class="id">ID: ${book.id}</div>
             `;
